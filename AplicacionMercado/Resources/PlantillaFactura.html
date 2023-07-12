@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Webbb </title>
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+
+            <td style="width:60%" align="center">
+                <table>
+                    <tr><td align="center">Super Mercado</td></tr>
+                    <tr><td align="center">Factura# @FACTURA</td></tr>
+
+                </table>
+            </td>
+
+        </tr>
+
+        <tr><td colspan="3" height="40"></td></tr>
+
+        <tr>
+            <td colspan="2">
+                <table style="width:100%">
+                    <tr>
+                        <td colspan="1" style="width:20%">Cliente:</td>
+                        <td colspan="3" style="width:80%;border-bottom:1px solid black">@CLIENTE</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" style="width:20%">ID cliente:</td>
+                        <td colspan="1" style="width:40%;border-bottom:1px solid black">@IDCLIENTE</td>
+                        <td colspan="1" style="width:10%">Fecha:</td>
+                        <td colspan="1" style="width:40%;border-bottom:1px solid black">@FECHA</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr><td colspan="3" height="20"></td></tr>
+
+        <tr>
+            <td colspan="3">
+                <table style="width:100%">
+                    <thead style="background-color:#FA0221">
+                        <tr>
+                            <th>Nombre producto</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+                        <!--<tr>
+                            <td>xxx</td>
+                            <td>x</td>
+                            <td>xx</td>
+                        </tr>-->
+                        @FILAS
+
+                        <tr>
+                            <td style="border: 0px !important"></td>
+                            <td style="border: 0px !important"></td>
+                            <td align="right">Subtotal:</td>
+                            <td>@SUBTOTAL</td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: 0px !important"></td>
+                            <td style="border: 0px !important"></td>
+                            <td align="right">IVA:</td>
+                            <td>@IVA</td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: 0px !important"></td>
+                            <td style="border: 0px !important"></td>
+                            <td align="right">Total:</td>
+                            <td>@TOTAL</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
